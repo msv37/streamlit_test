@@ -14,4 +14,5 @@ df_max = df.groupby(['Job Title','Years of Experience'])['Salary'].max()
 st.dataframe(df_max)
 
 df_max2 = df.groupby(['Job Title'])['Salary'].max()
+df_max2.sort_values(by=['Salary'], ascending=False)
 st.dataframe(df_max2)
