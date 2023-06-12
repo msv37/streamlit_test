@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-st.write("Hello World")
+st.title("Salaries Dataframe")
 
 df= pd.read_csv("Salary_Data.csv")
 
