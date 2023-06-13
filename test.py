@@ -18,3 +18,5 @@ st.write("Salaries in order from greatest to lowest")
 df_max2 = df.groupby(['Job Title'])['Salary'].max()
 df_max2 = df.sort_values(by=['Salary'], ascending=False)
 st.dataframe(df_max2)
+
+st.dataframe(df_max2.isnull())
